@@ -15,12 +15,14 @@ body {
 .main {
   width: 100vw;
   height: 100vh;
-  background: url("/assets/bg.jpg") no-repeat;
+  /*
+    background: url("/assets/background.jpg") no-repeat;
+  */
   background-size: cover;
   overflow: hidden;
 }
 nav {
-  height: 100px;
+  height: 20%;
   width: 100%;
 }
 /*Logo*/

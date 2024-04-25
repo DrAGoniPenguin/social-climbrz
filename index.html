@@ -16,7 +16,9 @@ layout: default
     -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
       <style>
         
@@ -57,20 +59,6 @@ layout: default
           text-align: left;
         }
 
-        .dude {
-          margin: 0px 40px 0px -200px;
-          float: left;
-        }
-
-        .imagething {
-          margin: 0 0 0 -120px;
-          display: flex;
-        }
-
-        .idek {
-          text-align: left;
-        }
-
         .centerAlign {
           text-align: center;
           font-size: 17px;
@@ -88,7 +76,7 @@ layout: default
         /*bar background colour*/
         .navbar {
           overflow: hidden;
-          background-color: #18891d;
+          background-color: #606060FF;
           position: fixed;
           left: 900px;
           bottom: -10px;
@@ -100,7 +88,7 @@ layout: default
         .navbar a {
           float: left;
           display: block;
-          color: #c947da;
+          color: #D6ED17FF;
           text-align: center;
           padding: 14px 10px;
           text-decoration: none;
@@ -150,27 +138,27 @@ layout: default
 
         /*scroll bar thing*/
         ::-webkit-scrollbar {
-          width: 20px;
+            width: 20px;
         }
 
         ::-webkit-scrollbar-track {
-          box-shadow: inset 0 0 5px rgb(255, 5, 5); 
-          border-radius: 10px;
+            box-shadow: inset 0 0 5px rgb(255, 5, 5);
+            border-radius: 10px;
         }
 
         /* before */
         ::-webkit-scrollbar-thumb {
-          background: grey; 
-          border-radius: 10px;
+            background: grey;
+            border-radius: 10px;
         }
 
         /* after */
         ::-webkit-scrollbar-thumb:hover {
-          background: #093667; 
+            background: #093667;
         }
       
 
-        #button1 {
+        #topButton {
           display: none;
           position: fixed;
           bottom: 20px;
@@ -186,7 +174,7 @@ layout: default
           font-size: 15px;
         }
 
-        #button1:hover {
+        #topButton:hover {
           background-color: #555;
         }
 
@@ -197,7 +185,8 @@ layout: default
 
   <div class="navbar" id="thenavbar">
     <a class="active" href="#title">H o m e</a>
-    <!-- <a href="#history">History</a> -->
+      <a href="#info">Info</a>
+      <a href="#hobby">Hobbies</a>
     
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responseFunction()">&#9776;</a>
   </div>
@@ -215,10 +204,10 @@ layout: default
 
     <div class="main">
 
-      <button onclick="topFunction()" id="button1" title="Return to top">Top</button>
+      <button onclick="topFunction()" id="topButton" title="Return to top">Top</button>
 
           <script>
-            let buttonthing = document.getElementById("button1");
+            let buttonthing = document.getElementById("topButton");
 
             window.onscroll = function() {scrollFunction()};
 
@@ -240,16 +229,56 @@ layout: default
       <div style="text-align:center">
 
       <p>
-        <center>
+        <div style="text-align: center;">
           <h1 id="title"> espanol o desaparecer </h1>
-        </center>
+        </div>
+      </p>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div>
+          <div style="text-align: center;">
+              <h3 id="info"> Acerca de Mí </h3>
+
+              <p>
+                  Hola! Mi nombre es Ronald Triumph y yo tengo diecinueve anos. Estoy en 11th grado
+
+              </p>
+          </div>
+      </div>
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>
+          <div style="text-align: center;">
+          <h3 id="hobby"> Mis Pasatiempos </h3>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
       </p>
 
         <br>
 
       <script src="https://utteranc.es/client.js"
         repo="dragonipenguin/social-climbrz"
-        issue-term="pathname"
+        issue-term="1"
         label="wontfix"
         theme="github-dark"
         crossorigin="anonymous"
