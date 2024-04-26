@@ -21,7 +21,7 @@ layout: default
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
       <style>
-        
+
         html {
           scroll-behavior: smooth;
         }
@@ -33,7 +33,7 @@ layout: default
         body {
           font-size: 21px;
           margin: auto;
-          width: 850px; 
+          width: 850px;
           padding: 10px;
           font-family: Arial, Helvetica, sans-serif;
         }
@@ -45,7 +45,7 @@ layout: default
         }
 
         .dots1 {
-          margin: 0 0 0 200px;
+          margin: 0 0 0 220px;
           text-align: left;
         }
 
@@ -63,7 +63,7 @@ layout: default
           text-align: center;
           font-size: 17px;
         }
-        
+
 
         /*navigation bar*/
         /*isolate nav bar from everything else*/
@@ -77,11 +77,10 @@ layout: default
         .navbar {
           overflow: hidden;
           background-color: #606060FF;
-          position: fixed;
-          left: 900px;
-          bottom: -10px;
+          position: sticky;
+          bottom: 0;
           width: 100%;
-          
+
         }
 
         /*text color*/
@@ -156,7 +155,7 @@ layout: default
         ::-webkit-scrollbar-thumb:hover {
             background: #093667;
         }
-      
+
 
         #topButton {
           display: none;
@@ -180,27 +179,10 @@ layout: default
 
       </style>
   </head>
-  
+
 <body>
 
-  <div class="navbar" id="thenavbar">
-    <a class="active" href="#title">H o m e</a>
-      <a href="#info">Info</a>
-      <a href="#hobby">Hobbies</a>
-    
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responseFunction()">&#9776;</a>
-  </div>
 
-  <script>
-    function responseFunction() {
-      var x = document.getElementById("thenavbar");
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
-      }
-    }
-    </script>
 
     <div class="main">
 
@@ -228,63 +210,114 @@ layout: default
 
       <div style="text-align:center">
 
-      <p>
-        <div style="text-align: center;">
-          <h1 id="title"> espanol o desaparecer </h1>
-        </div>
-      </p>
+          <p>
+              <h1 id="title"> espanol o desaparecer </h1>
+          </p>
 
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
 
-      <div>
-          <div style="text-align: center;">
-              <h3 id="info"> Acerca de Mí </h3>
+          <h3 id="info"> Acerca de Mí </h3>
 
-              <p>
-                  Hola! Mi nombre es Ronald Triumph y yo tengo diecinueve anos. Estoy en 11th grado
+          <p>
+              ¡Hola! Mi nombre es Ronald Trump y yo tengo dieciocho años. Yo donde vivo en los Estados Unidos y estoy en undécimo grado.
+              Yo creo que yo soy inteligente, pero yo
 
-              </p>
+              Yo quiero un nuevo amigo porque mis viejos amigos son conmovedora otro pais. Mis otro amigos estan en el hospital despues de un accidente con mi carro.
+
+
+          </p>
+
+          <div style="font-size: 13px; font-size:80%; text-align:center;" class="left">
+              <figure>
+                  <img src="assets/jimneu.jpg" alt="selfie" width="233" height="320" style="padding-bottom:0.5em;" class="left"/>
+                  <figcaption class="centerAlign"> un foto </figcaption>
+              </figure>
           </div>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p>
+              <h3 id="hobby"> Mis Pasatiempos </h3>
+
+                Me gusta quemar y trepar las árboles de mi ciudad.
+
+          </p>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p>
+
+            <h3 id="qualities"> Las Cualidades Importantes Amigos </h3>
+            <ul style="list-style-type:square;" class = "dots1">
+                <li> gracioso </li>
+                <li> sociable o tranquilo </li>
+                <li> tener sentido de humor </li>
+                <li> bien educado </li>
+            </ul>
+          </p>
+
+            <br>
+          <p>
+            <h3 id="reasons"> Reflejo </h3>
+            Yo creo que una persona que necesita un amigo respond
+          </p>
+
+
       </div>
 
 
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <p>
-          <div style="text-align: center;">
-          <h3 id="hobby"> Mis Pasatiempos </h3>
-      </div>
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+    <script src="https://utteranc.es/client.js"
+      repo="dragonipenguin/social-climbrz"
+      issue-term="comments"
+      label="wontfix"
+      theme="github-dark"
+      crossorigin="anonymous"
+      async>
+    </script>
 
 
-      </p>
+    <script>
+        function responseFunction() {
+            var x = document.getElementById("thenavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
 
-        <br>
-
-      <script src="https://utteranc.es/client.js"
-        repo="dragonipenguin/social-climbrz"
-        issue-term="1"
-        label="wontfix"
-        theme="github-dark"
-        crossorigin="anonymous"
-        async>
-      </script>
     </div>
-  
+
+    <div class="navbar" id="thenavbar">
+        <a class="active" href="#title">H o m e</a>
+        <a href="#info">Acerca de Mí</a>
+        <a href="#hobby">Pasatiempos</a>
+        <a href="#qualities">Cualidades</a>
+
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responseFunction()">&#9776;</a>
+    </div>
+
   </body>
 </html>
